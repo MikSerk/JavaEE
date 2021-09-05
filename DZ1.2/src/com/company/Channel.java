@@ -7,9 +7,9 @@ public class Channel {
     public Channel(String nameChannel) {
         this.nameChannel = nameChannel;
     }
-    public void addProgram(Program program){
-        for (int i = 0; i < 3; i++) {
-            programs [i]=program;
-        }
+    public void addProgram(Program program,int i){
+        programs = new Program[3];
+            programs [i-1]=program;
+
     }
 }

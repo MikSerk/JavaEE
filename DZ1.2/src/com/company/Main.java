@@ -12,10 +12,10 @@ public class Main {
         Controller controller = new Controller(tv);
 
         tv.addChannel(channel);
-        channel.addProgram(p1);
-        channel.addProgram(p2);
-        channel.addProgram(p3);
+        channel.addProgram(p1,1);
+        channel.addProgram(p2,2);
+        channel.addProgram(p3,3);
 //
-        controller.on(1); // случайную программу из Первого канала
+        controller.on(0); // случайную программу из Первого канала
     }
 }

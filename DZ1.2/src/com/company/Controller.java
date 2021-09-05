@@ -8,7 +8,7 @@ public class Controller {
         this.tv = tv;
     }
 
-    public String on (int number){
-
+    public void on (int number) {
+        System.out.println(tv.channels.programs[number]);
     }
 }
