@@ -16,6 +16,6 @@ public class Main {
         channel.addProgram(p2,2);
         channel.addProgram(p3,3);
 //
-        controller.on(0); // случайную программу из Первого канала
+        controller.on(); // случайную программу из Первого канала
     }
 }

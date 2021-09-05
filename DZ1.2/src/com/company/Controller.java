@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Random;
+
 public class Controller {
     TV tv;
     Channel channel;
@@ -8,7 +10,9 @@ public class Controller {
         this.tv = tv;
     }
 
-    public void on (int number) {
-        System.out.println(tv.channels.programs[number]);
+    public void on () {
+        Random random=new Random();
+
+        System.out.println(tv.channels.programs[random.nextInt(3)].nameProgram);
     }
 }
